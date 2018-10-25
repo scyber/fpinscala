@@ -1,5 +1,6 @@
 val commonSettings = Seq(
-  scalaVersion := "2.12.1"
+  scalaVersion := "2.12.1",
+  libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5"
 )
 
 lazy val root = (project in file("."))
