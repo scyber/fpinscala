@@ -1,3 +1,5 @@
+import java.util.concurrent.TimeUnit
+
 /* This version respects timeouts. See `Map2Future` below. */
 def map2[A,B,C](a: Par[A], b: Par[B])(f: (A,B) => C): Par[C] =
   es => {
